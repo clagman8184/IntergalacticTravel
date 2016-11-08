@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXU-cW-XFo">
@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="-515"/>
+            <point key="canvasLocation" x="998" y="-515"/>
         </scene>
         <!--Star View Controller-->
         <scene sceneID="RTp-XZ-NEO">
@@ -62,14 +62,26 @@
                         <viewControllerLayoutGuide type="bottom" id="LQt-TC-QWn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1oU-rG-QlQ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j2T-is-nVg"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LQt-TC-QWn" firstAttribute="top" secondItem="j2T-is-nVg" secondAttribute="bottom" id="6Q2-w9-dzX"/>
+                            <constraint firstAttribute="trailing" secondItem="j2T-is-nVg" secondAttribute="trailing" id="HaA-8R-PHw"/>
+                            <constraint firstItem="j2T-is-nVg" firstAttribute="leading" secondItem="1oU-rG-QlQ" secondAttribute="leading" id="Kor-Vu-CE7"/>
+                            <constraint firstItem="j2T-is-nVg" firstAttribute="top" secondItem="ObV-Y1-qRZ" secondAttribute="bottom" id="nhk-oM-ITU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="starImageView" destination="j2T-is-nVg" id="fZd-Mm-KWc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvH-nc-waw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1745" y="-515"/>
+            <point key="canvasLocation" x="1668.75" y="-515.0390625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U0P-MG-CJb">
@@ -91,6 +103,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5oH-5q-vrT"/>
+        <segue reference="HN4-Cc-FQ8"/>
     </inferredMetricsTieBreakers>
 </document>
